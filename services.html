@@ -197,8 +197,11 @@
         .hero-heart.heart-9 { left: 80%; font-size: 3.5rem; animation-duration: 23s; animation-delay: -18s; color: var(--color-primary); opacity: 0.6; filter: blur(1.5px); }
         .hero-heart.heart-10 { left: 5%; font-size: 1.5rem; animation-duration: 29s; animation-delay: -20s; }
 
-        /* 5. Page-Specific: Services Menu (was 4)
+
+        /* 5. Page-Specific: Services Menu
         ------------------------------------------------------------------ */
+        
+        /* Desktop Sidebar Nav */
         .service-nav-link {
             display: flex;
             align-items: center;
@@ -263,8 +266,55 @@
             top: 5px; /* Adjust vertical alignment */
             font-size: 1rem; /* text-md */
         }
+
+        /* Mobile Accordion Styles */
+        .service-accordion-item {
+            border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+        }
+        .service-accordion-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 1.5rem 0.5rem; /* py-6 px-2 */
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            text-align: left;
+        }
+        .service-accordion-question h3 {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600;
+            color: var(--color-heading);
+            display: flex;
+            align-items: center;
+        }
+        .service-accordion-icon {
+            font-size: 1rem; /* text-md */
+            color: var(--color-accent);
+            transition: transform 0.3s ease;
+            margin-left: 1rem; /* Added margin for spacing */
+        }
+        .service-accordion-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out, padding 0.4s ease;
+            padding: 0 0.5rem; /* px-2 */
+        }
+        .service-accordion-answer-content {
+             padding-bottom: 1.5rem; /* pb-6 */
+        }
+
+        /* State when open */
+        .service-accordion-item.open .service-accordion-answer {
+            max-height: 700px; /* Adjust as needed, large enough for content */
+        }
+        .service-accordion-item.open .service-accordion-icon {
+            transform: rotate(45deg);
+        }
+
         
-        /* 5. Page-Specific: FAQ Accordion
+        /* 6. Page-Specific: FAQ Accordion
         ------------------------------------------------------------------ */
         .faq-item {
             border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
@@ -309,7 +359,7 @@
             transform: rotate(45deg);
         }
 
-        /* 6. Scroll Animations
+        /* 7. Scroll Animations
         ------------------------------------------------------------------ */
         .reveal {
             opacity: 0;
@@ -323,7 +373,7 @@
         .reveal-delay-1 { transition-delay: 200ms; }
         .reveal-delay-2 { transition-delay: 400ms; }
 
-        /* 7. Floating WhatsApp Button
+        /* 8. Floating WhatsApp Button
         ------------------------------------------------------------------ */
         .whatsapp-float {
             position: fixed;
@@ -402,9 +452,6 @@
         </div>
         
         <div class="container mx-auto px-6 text-center relative z-10">
-
-            <!-- REMOVED the two static hearts that were here -->
-
             <h1 class="text-5xl md:text-7xl font-bold reveal relative" style="line-height: 1.2;">
                 Our Treatment Menu
             </h1>
@@ -417,25 +464,18 @@
     <!-- Services Main Content Section -->
     <section id="services-menu" class="py-24">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
+
+            <!-- 
+            ======================================================================
+            DESKTOP LAYOUT: Sidebar + Content (Visible on LG screens and up)
+            ======================================================================
+            -->
+            <div class="hidden lg:flex flex-col lg:flex-row gap-12 lg:gap-16">
                 
                 <!-- Left Column: Navigation -->
                 <aside class="lg:w-1/3 reveal">
                     <div class="sticky top-32 bg-[var(--color-bg)] p-4 rounded-2xl shadow-sm border border-gray-100">
                         <h2 class="text-3xl font-semibold mb-6 px-2">Our Services</h2>
-                        <!-- 
-                        ======================================================================
-                        FIX APPLIED HERE
-                        ======================================================================
-                        I changed the classes on this <nav> element.
-                        
-                        - Removed `flex-row` (which forced horizontal layout on mobile)
-                        - Added `flex-col` (to make it a vertical list by default)
-                        - Removed `overflow-x-auto` (which caused the scrolling)
-                        - Removed horizontal spacing `space-x-2`
-                        - Added `space-y-2` (to add vertical spacing between the items)
-                        - Cleaned up other redundant classes that are now handled by the mobile-first defaults.
-                        -->
                         <nav id="service-nav" class="flex flex-col space-y-2">
                             <!-- Nav Link 1 -->
                             <a class="service-nav-link active" data-target="#service-content-1">
@@ -487,7 +527,7 @@
                                 <li>Hydrates and smooths fine lines on the lips.</li>
                                 <li>Corrects asymmetry for a balanced smile.</li>
                             </ul>
-                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                            <a href="contact.html" class="btn-primary">Book Your Consultation</a>
                         </div>
                         
                         <!-- Content 2: Lip Enhancement -->
@@ -502,7 +542,7 @@
                                 <li>Uses premium, long-lasting fillers.</li>
                                 <li>Ideal for first-timers and enhancements.</li>
                             </ul>
-                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                            <a href="contact.html" class="btn-primary">Book Your Consultation</a>
                         </div>
 
                         <!-- Content 3: Anti-Wrinkle -->
@@ -517,7 +557,7 @@
                                 <li>Creates a natural, "well-rested" look.</li>
                                 <li>Quick, safe, and highly effective procedure.</li>
                             </ul>
-                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                            <a href="contact.html" class="btn-primary">Book Your Consultation</a>
                         </div>
 
                         <!-- Content 4: Fat Dissolving -->
@@ -532,7 +572,7 @@
                                 <li>Non-surgical alternative to liposuction.</li>
                                 <li>Minimal downtime and gradual, natural results.</li>
                             </ul>
-                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                            <a href="contact.html" class="btn-primary">Book Your Consultation</a>
                         </div>
 
                         <!-- Content 5: Vitamin Injections -->
@@ -540,14 +580,14 @@
                             <h2 class="text-4xl font-semibold mb-6">Vitamin Injections</h2>
                             <p class="text-lg mb-6">
                                 Boost your well-being from the inside out. Our vitamin injections (like B12) bypass the digestive system for 100% absorption, helping to enhance energy levels, improve mood, and support overall health.
-                            </g>
+                            </p>
                             <ul class="service-detail-list mb-8">
                                 <li>Increases energy levels and fights fatigue.</li>
                                 <li>Boosts metabolism and aids in weight loss.</li>
                                 <li>Improves sleep quality and concentration.</li>
                                 <li>Supports a healthy immune system.</li>
                             </ul>
-                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                            <a href="contact.html" class="btn-primary">Book Your Consultation</a>
                         </div>
 
                         <!-- Content 6: Skin Boosters -->
@@ -562,11 +602,176 @@
                                 <li>Reduces fine lines and improves skin texture.</li>
                                 <li>Creates a luminous, dewy, and radiant glow.</li>
                             </ul>
-                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                            <a href="contact.html" class="btn-primary">Book Your Consultation</a>
                         </div>
                     </div>
                 </main>
             </div>
+
+            <!-- 
+            ======================================================================
+            MOBILE LAYOUT: Accordion (Visible on screens smaller than LG)
+            ======================================================================
+            -->
+            <div class="lg:hidden reveal">
+                <div class="max-w-3xl mx-auto bg-white p-4 sm:p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <h2 class="text-3xl font-semibold mb-4 text-center">Our Services</h2>
+                    
+                    <div id="service-accordion-container">
+                        <!-- Accordion Item 1 -->
+                        <div class="service-accordion-item">
+                            <button class="service-accordion-question">
+                                <h3>
+                                    <i class="fas fa-droplet w-6 mr-3 text-lg text-[var(--color-accent)]"></i>
+                                    Dermal Lip Fillers
+                                </h3>
+                                <i class="fas fa-plus service-accordion-icon"></i>
+                            </button>
+                            <div class="service-accordion-answer">
+                                <div class="service-accordion-answer-content">
+                                    <p class="text-lg mb-6">
+                                        Our dermal lip filler treatments are designed to restore volume, define contours, and provide deep hydration for naturally plump and beautiful results. We focus on enhancing your unique shape.
+                                    </p>
+                                    <ul class="service-detail-list mb-8">
+                                        <li>Adds natural-looking volume and plumpness.</li>
+                                        <li>Defines the cupid's bow and border.</li>
+                                        <li>Hydrates and smooths fine lines on the lips.</li>
+                                        <li>Corrects asymmetry for a balanced smile.</li>
+                                    </ul>
+                                    <a href="contact.html" class="btn-primary">Book Your Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2 -->
+                        <div class="service-accordion-item">
+                            <button class="service-accordion-question">
+                                <h3>
+                                    <i class="fas fa-syringe w-6 mr-3 text-lg text-[var(--color-accent)]"></i>
+                                    Lip Enhancement
+                                </h3>
+                                <i class="fas fa-plus service-accordion-icon"></i>
+                            </button>
+                            <div class="service-accordion-answer">
+                                <div class="service-accordion-answer-content">
+                                    <p class="text-lg mb-6">
+                                        Our signature lip enhancement is a bespoke treatment focused on creating beautifully shaped, defined, and balanced lips. This is perfect for those seeking a subtle enhancement or a more noticeable, yet natural, pout.
+                                    </p>
+                                    <ul class="service-detail-list mb-8">
+                                        <li>Bespoke shaping tailored to your facial structure.</li>
+                                        <li>Focuses on definition and enhancement.</li>
+                                        <li>Uses premium, long-lasting fillers.</li>
+                                        <li>Ideal for first-timers and enhancements.</li>
+                                    </ul>
+                                    <a href="contact.html" class="btn-primary">Book Your Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3 -->
+                        <div class="service-accordion-item">
+                            <button class="service-accordion-question">
+                                <h3>
+                                    <i class="fas fa-magic-wand-sparkles w-6 mr-3 text-lg text-[var(--color-accent)]"></i>
+                                    Anti-Wrinkle
+                                </h3>
+                                <i class="fas fa-plus service-accordion-icon"></i>
+                            </button>
+                            <div class="service-accordion-answer">
+                                <div class="service-accordion-answer-content">
+                                    <p class="text-lg mb-6">
+                                        Soften fine lines and prevent new ones from forming. Our anti-wrinkle treatments relax targeted facial muscles, resulting in a flawlessly smooth, refreshed, and more youthful complexion.
+                                    </p>
+                                    <ul class="service-detail-list mb-8">
+                                        <li>Targets frown lines, forehead lines, and crow's feet.</li>
+                                        <li>Prevents the deepening of dynamic wrinkles.</li>
+                                        <li>Creates a natural, "well-rested" look.</li>
+                                        <li>Quick, safe, and highly effective procedure.</li>
+                                    </ul>
+                                    <a href="contact.html" class="btn-primary">Book Your Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 4 -->
+                        <div class="service-accordion-item">
+                            <button class="service-accordion-question">
+                                <h3>
+                                    <i class="fas fa-fire w-6 mr-3 text-lg text-[var(--color-accent)]"></i>
+                                    Fat Dissolving
+                                </h3>
+                                <i class="fas fa-plus service-accordion-icon"></i>
+                            </button>
+                            <div class="service-accordion-answer">
+                                <div class="service-accordion-answer-content">
+                                    <p class="text-lg mb-6">
+                                        Permanently eliminate stubborn pockets of fat that are resistant to diet and exercise. This treatment is ideal for sculpting areas like the chin, abdomen, and thighs for a more defined contour.
+                                    </p>
+                                    <ul class="service-detail-list mb-8">
+                                        <li>Targets and destroys fat cells permanently.</li>
+                                        <li>Ideal for double chins, jowls, and body areas.</li>
+                                        <li>Non-surgical alternative to liposuction.</li>
+                                        <li>Minimal downtime and gradual, natural results.</li>
+                                    </ul>
+                                    <a href="contact.html" class="btn-primary">Book Your Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 5 -->
+                        <div class="service-accordion-item">
+                            <button class="service-accordion-question">
+                                <h3>
+                                    <i class="fas fa-prescription-bottle w-6 mr-3 text-lg text-[var(--color-accent)]"></i>
+                                    Vitamin Injections
+                                </h3>
+                                <i class="fas fa-plus service-accordion-icon"></i>
+                            </button>
+                            <div class="service-accordion-answer">
+                                <div class="service-accordion-answer-content">
+                                    <p class="text-lg mb-6">
+                                        Boost your well-being from the inside out. Our vitamin injections (like B12) bypass the digestive system for 100% absorption, helping to enhance energy levels, improve mood, and support overall health.
+                                    </p>
+                                    <ul class="service-detail-list mb-8">
+                                        <li>Increases energy levels and fights fatigue.</li>
+                                        <li>Boosts metabolism and aids in weight loss.</li>
+                                        <li>Improves sleep quality and concentration.</li>
+                                        <li>Supports a healthy immune system.</li>
+                                    </ul>
+                                    <a href="contact.html" class="btn-primary">Book Your Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 6 -->
+                        <div class="service-accordion-item">
+                            <button class="service-accordion-question">
+                                <h3>
+                                    <i class="fas fa-star w-6 mr-3 text-lg text-[var(--color-accent)]"></i>
+                                    Skin Boosters
+                                </h3>
+                                <i class="fas fa-plus service-accordion-icon"></i>
+                            </button>
+                            <div class="service-accordion-answer">
+                                <div class="service-accordion-answer-content">
+                                    <p class="text-lg mb-6">
+                                        Achieve a radiant, "glass skin" glow with our intensive skin-boosting treatments. These micro-injections deliver deep hydration and stimulate collagen, improving skin texture, elasticity, and luminosity.
+                                    </p>
+                                    <ul class="service-detail-list mb-8">
+                                        <li>Delivers intense, deep-skin hydration.</li>
+                                        <li>Stimulates natural collagen and elastin production.</li>
+                                        <li>Reduces fine lines and improves skin texture.</li>
+                                        <li>Creates a luminous, dewy, and radiant glow.</li>
+                                    </ul>
+                                    <a href="contact.html" class="btn-primary">Book Your Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     
@@ -711,9 +916,9 @@
                     <nav class="space-y-3">
                         <a href="index.html" class="block footer-link">Home</a>
                         <a href="services.html" class="block footer-link">Services</a>
-                        <a href="index.html#about" class="block footer-link">About Me</a>
-                        <a href="index.html#testimonials" class="block footer-link">Testimonials</a>
-                        <a href="index.html#contact" class="block footer-link">Contact</a>
+                        <a href="about.html" class="block footer-link">About Me</a>
+                        <a href="testimonials.html" class="block footer-link">Testimonials</a>
+                        <a href="contact.html" class="block footer-link">Contact</a>
                     </nav>
                 </div>
 
@@ -722,7 +927,7 @@
                     <h4 class="text-xl font-semibold text-white mb-4 uppercase tracking-wider">Our Services</h4>
                     <nav class="space-y-3">
                         <a href="services.html#service-content-4" class="block footer-link">Fat Dissolving</a>
-                        <a href="services.html#service-content-5" class_ ="block footer-link">Vitamin Injections</a>
+                        <a href="services.html#service-content-5" class="block footer-link">Vitamin Injections</a>
                         <a href="services.html#service-content-3" class="block footer-link">Anti-Wrinkle</a>
                         <a href="services.html#service-content-1" class="block footer-link">Dermal Lip Fillers</a>
                         <a href="services.html#service-content-6" class="block footer-link">Skin Boosters</a>
@@ -813,7 +1018,7 @@
 
         // Intersection Observer for Scroll Animations
         const revealElements = document.querySelectorAll('.reveal');
-        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observerOptions = { root: null, rootMArg: '0px', threshold: 0.1 };
         const observerCallback = (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -833,7 +1038,7 @@
             });
         }
         
-        // Service Menu Toggle Logic
+        // Service Menu Toggle Logic (for DESKTOP)
         const serviceNav = document.getElementById('service-nav');
         const contentContainer = document.getElementById('service-content-container');
         
@@ -861,15 +1066,45 @@
                 if (targetBlock) {
                     targetBlock.classList.add('active');
                 }
-                
-                // NEW: Auto-scroll on mobile
-                // Check if we are on a mobile-sized screen (less than lg breakpoint 1024px)
-                if (window.innerWidth < 1024) {
-                    // Scroll the content container into view
-                    contentContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                // Check for mobile and scroll
+                if (window.innerWidth < 1024) { // lg breakpoint
+                    const contentTop = document.getElementById('service-content-container')?.offsetTop;
+                    if(contentTop) {
+                        window.scrollTo({
+                            top: contentTop - 100, // 100px offset for sticky header
+                            behavior: 'smooth'
+                        });
+                    }
                 }
             });
         }
+
+        // Service Accordion Logic (for MOBILE)
+        const accordionContainer = document.getElementById('service-accordion-container');
+        if (accordionContainer) {
+            const accordionItems = accordionContainer.querySelectorAll('.service-accordion-item');
+            
+            accordionItems.forEach(item => {
+                const question = item.querySelector('.service-accordion-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const wasOpen = item.classList.contains('open');
+                        
+                        // Close all others
+                        accordionItems.forEach(otherItem => {
+                            otherItem.classList.remove('open');
+                        });
+                        
+                        // If it wasn't open, open it
+                        if (!wasOpen) {
+                            item.classList.add('open');
+                        }
+                    });
+                }
+            });
+        }
+
         
         // FAQ Accordion Logic
         const faqItems = document.querySelectorAll('.faq-item');
