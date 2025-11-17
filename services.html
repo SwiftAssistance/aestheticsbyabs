@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Aesthetics by Abs, Kent</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore the full menu of luxury mobile aesthetic treatments offered by Aesthetics by Abs in Kent. From lip fillers to anti-wrinkle and skin boosters.">
+    <meta name="keywords" content="aesthetics services Kent, lip fillers, anti-wrinkle, fat dissolving, vitamin injections, skin boosters, mobile aesthetics menu">
+    <meta name="author" content="Aesthetics by Abs">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Our Services - Aesthetics by Abs, Kent">
+    <meta property="og:description" content="Discover our bespoke menu of luxury mobile aesthetic treatments, including dermal fillers, anti-wrinkle injections, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE/services.html"> <!-- TODO: Replace with your live URL -->
+    <meta property="og:image" content="https://placehold.co/1200x630/F4D4D4/FAF9F6?text=Our+Services">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Services - Aesthetics by Abs, Kent">
+    <meta name="twitter:description" content="Discover our bespoke menu of luxury mobile aesthetic treatments, including dermal fillers, anti-wrinkle injections, and more.">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/F4D4D4/FAF9F6?text=Our+Services">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="YOUR_WEBSITE_URL_HERE/services.html"> <!-- TODO: Replace with your live URL -->
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- 
+    ======================================================================
+    EMBEDDED CSS STYLES (Consistent with index.html)
+    ======================================================================
+    -->
+    <style>
+        /* 1. Root Variables & Base
+        ------------------------------------------------------------------ */
+        :root {
+            --color-bg: #FAF9F6; /* Soft White/Cream */
+            --color-primary: #F4D4D4; /* Soft Blush Pink */
+            --color-accent: #D6BCAE; /* Champagne Nude/Gold */
+            --color-text: #3d3d3d; /* Elegant Dark Grey */
+            --color-heading: #2C2C2C;
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--color-heading);
+            font-weight: 600;
+        }
+        
+        /* Overrides for Tailwind text colors to use our darker one */
+        .text-gray-600, .text-gray-700 {
+            color: var(--color-text);
+        }
+
+        /* 2. Buttons
+        ------------------------------------------------------------------ */
+        .btn-primary {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--color-accent);
+            color: white;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border-radius: 9999px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            opacity: 0.8;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: transparent;
+            border: 1px solid var(--color-accent);
+            color: var(--color-accent);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border-radius: 9999px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-secondary:hover {
+            background-color: var(--color-accent);
+            color: white;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: translateY(-2px);
+        }
+
+        /* 3. Header & Navigation
+        ------------------------------------------------------------------ */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .menu-open {
+            display: block !important;
+        }
+        .nav-link {
+            color: var(--color-text);
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: var(--color-accent);
+        }
+        .nav-link.active {
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+        .nav-link-mobile {
+            display: block;
+            text-align: center;
+            padding: 1rem 1.5rem;
+            color: var(--color-text);
+            transition: background-color 0.3s;
+        }
+        .nav-link-mobile:hover {
+            background-color: var(--color-primary);
+        }
+        
+        .footer-link {
+            color: #D1D5DB; /* text-gray-300 */
+            transition: color 0.3s;
+        }
+        .footer-link:hover {
+            color: var(--color-primary);
+        }
+
+        /* 4. Page-Specific: Services Menu
+        ------------------------------------------------------------------ */
+        .service-nav-link {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-radius: 0.75rem; /* rounded-xl */
+            font-size: 1.125rem; /* text-lg */
+            font-family: var(--font-heading);
+            font-weight: 500;
+            color: var(--color-text);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+        .service-nav-link:hover {
+            background-color: #ffffff;
+            color: var(--color-accent);
+        }
+        .service-nav-link.active {
+            background-color: #ffffff;
+            color: var(--color-accent);
+            font-weight: 600;
+            border-color: #f0e9e9;
+            box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+        }
+        .service-nav-link .fa-star {
+            color: var(--color-accent);
+        }
+        .service-content-block {
+            display: none; /* Hidden by default */
+        }
+        .service-content-block.active {
+            display: block; /* Shown when active */
+        }
+        
+        /* Animation for content block fading in */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .service-content-block.active {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        /* Custom list styles for service details */
+        .service-detail-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .service-detail-list li {
+            position: relative;
+            padding-left: 2rem; /* Space for the icon */
+            margin-bottom: 0.75rem; /* mb-3 */
+            font-size: 1.125rem; /* text-lg */
+        }
+        .service-detail-list li::before {
+            content: '\f005'; /* FontAwesome star icon */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900; /* Solid */
+            color: var(--color-accent);
+            position: absolute;
+            left: 0;
+            top: 5px; /* Adjust vertical alignment */
+            font-size: 1rem; /* text-md */
+        }
+        
+        /* 5. Page-Specific: FAQ Accordion
+        ------------------------------------------------------------------ */
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 1.5rem 0.5rem; /* py-6 px-2 */
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            text-align: left;
+        }
+        .faq-question h3 {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600;
+            color: var(--color-heading);
+        }
+        .faq-icon {
+            font-size: 1rem; /* text-md */
+            color: var(--color-accent);
+            transition: transform 0.3s ease;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out, padding 0.4s ease;
+            padding: 0 0.5rem; /* px-2 */
+        }
+        .faq-answer p {
+            padding-bottom: 1.5rem; /* pb-6 */
+            font-size: 1rem; /* text-base */
+            line-height: 1.6;
+        }
+        /* State when open */
+        .faq-item.open .faq-answer {
+            max-height: 300px; /* Adjust as needed, large enough for content */
+        }
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* 6. Scroll Animations
+        ------------------------------------------------------------------ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 200ms; }
+        .reveal-delay-2 { transition-delay: 400ms; }
+
+        /* 7. Floating WhatsApp Button
+        ------------------------------------------------------------------ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #25D366;
+            color: #FFFFFF;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            z-index: 40;
+            transition: all 0.3s ease-in-out;
+        }
+        .whatsapp-float:hover {
+            transform: translateY(-4px) scale(1.1);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Navigation -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-effect shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="text-3xl font-bold" style="font-family: var(--font-heading); color: var(--color-heading);">
+                Aesthetics by Abs
+            </a>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex space-x-8 nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <!-- Mobile Nav Toggle -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-[var(--color-heading)]">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg w-full absolute left-0 top-full shadow-lg nav-links">
+            <a href="index.html" class="nav-link-mobile">Home</a>
+            <a href="services.html" class="nav-link-mobile">Services</a>
+            <a href="about.html" class="nav-link-mobile">About</a>
+            <a href="testimonials.html" class="nav-link-mobile">Testimonials</a>
+            <a href="contact.html" class="nav-link-mobile">Contact</a>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section id="services-hero" class="relative pt-40 pb-24 hero-gradient" style="background-image: linear-gradient(135deg, #F4D4D4 0%, #FAF9F6 70%);">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold reveal" style="line-height: 1.2;">
+                Our Treatment Menu
+            </h1>
+            <p class="mt-6 mb-10 text-lg md:text-xl max-w-lg mx-auto reveal reveal-delay-1">
+                Discover our curated selection of premium aesthetic treatments, all designed to enhance your natural beauty.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Main Content Section -->
+    <section id="services-menu" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
+                
+                <!-- Left Column: Navigation -->
+                <aside class="lg:w-1/3 reveal">
+                    <div class="sticky top-32 bg-[var(--color-bg)] p-4 rounded-2xl shadow-sm border border-gray-100">
+                        <h2 class="text-3xl font-semibold mb-6 px-2">Our Services</h2>
+                        <nav id="service-nav" class="flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible pb-4 lg:pb-0 space-x-2 lg:space-x-0 lg:space-y-2">
+                            <!-- Nav Link 1 -->
+                            <a class="service-nav-link active" data-target="#service-content-1">
+                                <i class="fas fa-droplet w-6 mr-3 text-lg"></i>
+                                <span class="whitespace-nowrap">Dermal Lip Fillers</span>
+                            </a>
+                            <!-- Nav Link 2 -->
+                            <a class="service-nav-link" data-target="#service-content-2">
+                                <i class="fas fa-syringe w-6 mr-3 text-lg"></i>
+                                <span class="whitespace-nowrap">Lip Enhancement</span>
+                            </a>
+                            <!-- Nav Link 3 -->
+                            <a class="service-nav-link" data-target="#service-content-3">
+                                <i class="fas fa-magic-wand-sparkles w-6 mr-3 text-lg"></i>
+                                <span class="whitespace-nowrap">Anti-Wrinkle</span>
+                            </a>
+                            <!-- Nav Link 4 -->
+                            <a class="service-nav-link" data-target="#service-content-4">
+                                <i class="fas fa-fire w-6 mr-3 text-lg"></i>
+                                <span class="whitespace-nowrap">Fat Dissolving</span>
+                            </a>
+                            <!-- Nav Link 5 -->
+                            <a class="service-nav-link" data-target="#service-content-5">
+                                <i class="fas fa-prescription-bottle w-6 mr-3 text-lg"></i>
+                                <span class="whitespace-nowrap">Vitamin Injections</span>
+                            </a>
+                            <!-- Nav Link 6 -->
+                            <a class="service-nav-link" data-target="#service-content-6">
+                                <i class="fas fa-star w-6 mr-3 text-lg"></i>
+                                <span class="whitespace-nowrap">Skin Boosters</span>
+                            </a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- Right Column: Content -->
+                <main class="lg:w-2/3 reveal reveal-delay-1">
+                    <div id="service-content-container" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100 min-h-[500px]">
+                        
+                        <!-- Content 1: Dermal Lip Fillers -->
+                        <div class="service-content-block active" id="service-content-1">
+                            <h2 class="text-4xl font-semibold mb-6">Dermal Lip Fillers</h2>
+                            <p class="text-lg mb-6">
+                                Our dermal lip filler treatments are designed to restore volume, define contours, and provide deep hydration for naturally plump and beautiful results. We focus on enhancing your unique shape.
+                            </p>
+                            <ul class="service-detail-list mb-8">
+                                <li>Adds natural-looking volume and plumpness.</li>
+                                <li>Defines the cupid's bow and border.</li>
+                                <li>Hydrates and smooths fine lines on the lips.</li>
+                                <li>Corrects asymmetry for a balanced smile.</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                        </div>
+                        
+                        <!-- Content 2: Lip Enhancement -->
+                        <div class="service-content-block" id="service-content-2">
+                            <h2 class="text-4xl font-semibold mb-6">Signature Lip Enhancement</h2>
+                            <p class="text-lg mb-6">
+                                Our signature lip enhancement is a bespoke treatment focused on creating beautifully shaped, defined, and balanced lips. This is perfect for those seeking a subtle enhancement or a more noticeable, yet natural, pout.
+                            </p>
+                            <ul class="service-detail-list mb-8">
+                                <li>Bespoke shaping tailored to your facial structure.</li>
+                                <li>Focuses on definition and enhancement.</li>
+                                <li>Uses premium, long-lasting fillers.</li>
+                                <li>Ideal for first-timers and enhancements.</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                        </div>
+
+                        <!-- Content 3: Anti-Wrinkle -->
+                        <div class="service-content-block" id="service-content-3">
+                            <h2 class="text-4xl font-semibold mb-6">Anti-Wrinkle Injections</h2>
+                            <p class="text-lg mb-6">
+                                Soften fine lines and prevent new ones from forming. Our anti-wrinkle treatments relax targeted facial muscles, resulting in a flawlessly smooth, refreshed, and more youthful complexion.
+                            </p>
+                            <ul class="service-detail-list mb-8">
+                                <li>Targets frown lines, forehead lines, and crow's feet.</li>
+                                <li>Prevents the deepening of dynamic wrinkles.</li>
+                                <li>Creates a natural, "well-rested" look.</li>
+                                <li>Quick, safe, and highly effective procedure.</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                        </div>
+
+                        <!-- Content 4: Fat Dissolving -->
+                        <div class="service-content-block" id="service-content-4">
+                            <h2 class="text-4xl font-semibold mb-6">Fat Dissolving Injections</h2>
+                            <p class="text-lg mb-6">
+                                Permanently eliminate stubborn pockets of fat that are resistant to diet and exercise. This treatment is ideal for sculpting areas like the chin, abdomen, and thighs for a more defined contour.
+                            </p>
+                            <ul class="service-detail-list mb-8">
+                                <li>Targets and destroys fat cells permanently.</li>
+                                <li>Ideal for double chins, jowls, and body areas.</li>
+                                <li>Non-surgical alternative to liposuction.</li>
+                                <li>Minimal downtime and gradual, natural results.</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                        </div>
+
+                        <!-- Content 5: Vitamin Injections -->
+                        <div class="service-content-block" id="service-content-5">
+                            <h2 class="text-4xl font-semibold mb-6">Vitamin Injections</h2>
+                            <p class="text-lg mb-6">
+                                Boost your well-being from the inside out. Our vitamin injections (like B12) bypass the digestive system for 100% absorption, helping to enhance energy levels, improve mood, and support overall health.
+                            </p>
+                            <ul class="service-detail-list mb-8">
+                                <li>Increases energy levels and fights fatigue.</li>
+                                <li>Boosts metabolism and aids in weight loss.</li>
+                                <li>Improves sleep quality and concentration.</li>
+                                <li>Supports a healthy immune system.</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                        </div>
+
+                        <!-- Content 6: Skin Boosters -->
+                        <div class="service-content-block" id="service-content-6">
+                            <h2 class="text-4xl font-semibold mb-6">Skin Boosters</h2>
+                            <p class="text-lg mb-6">
+                                Achieve a radiant, "glass skin" glow with our intensive skin-boosting treatments. These micro-injections deliver deep hydration and stimulate collagen, improving skin texture, elasticity, and luminosity.
+                            </p>
+                            <ul class="service-detail-list mb-8">
+                                <li>Delivers intense, deep-skin hydration.</li>
+                                <li>Stimulates natural collagen and elastin production.</li>
+                                <li>Reduces fine lines and improves skin texture.</li>
+                                <li>Creates a luminous, dewy, and radiant glow.</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-semibold reveal">Frequently Asked Questions</h2>
+                <p class="text-lg mt-4 max-w-2xl mx-auto reveal reveal-delay-1">
+                    Your questions, answered. Here’s what you need to know about our mobile services.
+                </p>
+            </div>
+
+            <div class="faq-container reveal reveal-delay-2">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>What does "mobile aesthetics" mean?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            It means I bring the clinic to you! I perform all treatments in the comfort, privacy, and convenience of your own home. I bring a portable treatment bed, medical-grade supplies, and everything needed for a safe, hygienic, and professional service.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Is a consultation required for new clients?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes, all new clients require a full consultation. This is crucial for me to assess your medical history, understand your aesthetic goals, discuss treatment options, and ensure you are a suitable candidate. For anti-wrinkle injections, a consultation with my nurse prescriber is also legally required.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>What areas in Kent do you cover?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            I cover most of Kent and surrounding areas. A small travel fee may apply depending on your distance from my base. Please get in touch with your postcode, and I can confirm any travel costs before your booking.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>What products do you use?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            I am committed to safety and quality. I only use premium, industry-leading, CE-marked products for all my treatments. This ensures you receive the best possible, longest-lasting results in the safest manner.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Details Section (NEW) -->
+    <section id="contact-details" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto reveal">
+                <div class="text-center">
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-4">Ready to Begin?</h2>
+                    <p class="text-lg mb-10 max-w-2xl mx-auto">
+                        Get in touch today to book your private consultation.
+                    </p>
+                </div>
+                
+                <!-- Wrapper for details -->
+                <div class="max-w-lg mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100">
+                    <h3 class="text-3xl font-semibold mb-8 text-center">Contact Details</h3>
+                    <div class="space-y-6">
+                        <!-- 
+                        ======================================================================
+                        FIX APPLIED: Matched styling to index.html for consistent alignment
+                        ======================================================================
+                        -->
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-map-marker-alt text-2xl text-[var(--color-accent)] mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold">Service Area</h4>
+                                <p>Proudly serving Kent & surrounding areas. We come to you!</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-envelope text-2xl text-[var(--color-accent)] mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold">Email</h4>
+                                <a href="mailto:info@aestheticsbyabs.co.uk" class="hover:text-[var(--color-accent)] transition-colors">info@aestheticsbyabs.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-phone text-2xl text-[var(--color-accent)] mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold">Phone</h4>
+                                <a href="tel:07849432449" class="hover:text-[var(--color-accent)] transition-colors">07849 432449</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fab fa-instagram text-2xl text-[var(--color-accent)] mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold">Instagram</h4>
+                                <a href="https://www.instagram.com/aestheticsbyabs" target="_blank" class="hover:text-[var(--color-accent)] transition-colors">@aestheticsbyabs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2C2C2C] text-gray-300 pt-24 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+                <!-- Column 1: Logo & Info -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-white mb-2" style="font-family: var(--font-heading);">Aesthetics by Abs</h3>
+                    <p>Luxury Mobile Aesthetics in Kent</p>
+                    <p class="mt-4 text-sm text-gray-400">
+                        Fully qualified and insured practitioner providing luxury treatments in the comfort of your home.
+                    </p>
+                    <div class="flex space-x-5 mt-6 justify-center md:justify-start">
+                        <a href="https://www.instagram.com/aestheticsbyabs" target="_blank" class="text-2xl hover:text-[var(--color-primary)] transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/aestheticsbyabs" target="_blank" class="text-2xl hover:text-[var(--color-primary)] transition-colors" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@aestheticsbyabs" target="_blank" class="text-2xl hover:text-[var(--color-primary)] transition-colors" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4 uppercase tracking-wider">Quick Links</h4>
+                    <nav class="space-y-3">
+                        <a href="index.html" class="block footer-link">Home</a>
+                        <a href="services.html" class="block footer-link">Services</a>
+                        <a href="about.html" class="block footer-link">About Me</a>
+                        <a href="testimonials.html" class="block footer-link">Testimonials</a>
+                        <a href="contact.html" class="block footer-link">Contact</a>
+                    </nav>
+                </div>
+
+                <!-- Column 3: Our Services -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4 uppercase tracking-wider">Our Services</h4>
+                    <nav class="space-y-3">
+                        <a href="services.html#service-content-4" class="block footer-link">Fat Dissolving</a>
+                        <a href="services.html#service-content-5" class_ ="block footer-link">Vitamin Injections</a>
+                        <a href="services.html#service-content-3" class="block footer-link">Anti-Wrinkle</a>
+                        <a href="services.html#service-content-1" class="block footer-link">Dermal Lip Fillers</a>
+                        <a href="services.html#service-content-6" class="block footer-link">Skin Boosters</a>
+                    </nav>
+                </div>
+
+                <!-- Column 4: Contact Details -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4 uppercase tracking-wider">Get In Touch</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-center md:justify-start gap-3">
+                            <i class="fas fa-phone text-lg text-[var(--color-accent)]"></i>
+                            <a href="tel:07849432449" class="footer-link">07849 432449</a>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start gap-3">
+                            <i class="fas fa-envelope text-lg text-[var(--color-accent)]"></i>
+                            <a href="mailto:info@aestheticsbyabs.co.uk" class="footer-link">info@aestheticsbyabs.co.uk</a>
+                        </div>
+                        <div class="flex items-start justify-center md:justify-start gap-3">
+                            <i class="fas fa-map-marker-alt text-lg text-[var(--color-accent)] mt-1"></i>
+                            <div>
+                                <p>Serving Kent & Surrounding Areas</p>
+                                <p class="text-sm text-gray-400">We bring the clinic to you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 mt-16 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; <span id="current-year"></span> Aesthetics by Abs. All rights reserved.</p>
+                <p class="mt-1">
+                    <a href="#privacy-policy" class="footer-link">Privacy Policy</a> | 
+                    <a href="#cookie-policy" class="footer-link">Cookie Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/447849432449" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- 
+    ======================================================================
+    EMBEDDED JAVASCRIPT
+    ======================================================================
+    -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Set current year in footer
+        const currentYearEl = document.getElementById('current-year');
+        if (currentYearEl) {
+            currentYearEl.textContent = new Date().getFullYear();
+        }
+
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = mobileMenu ? mobileMenu.querySelectorAll('.nav-link-mobile') : [];
+
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('menu-open');
+                const icon = menuButton.querySelector('i');
+                if (mobileMenu.classList.contains('menu-open')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            });
+            
+            // Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('menu-open');
+                    const icon = menuButton.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                });
+            });
+        }
+
+        // Intersection Observer for Scroll Animations
+        const revealElements = document.querySelectorAll('.reveal');
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        revealElements.forEach(el => observer.observe(el));
+        
+        // Sticky Header Shadow on Scroll
+        const header = document.getElementById('header');
+        if (header) {
+            window.addEventListener('scroll', () => {
+                header.classList.toggle('shadow-lg', window.scrollY > 10);
+            });
+        }
+        
+        // Service Menu Toggle Logic
+        const serviceNav = document.getElementById('service-nav');
+        const contentContainer = document.getElementById('service-content-container');
+        
+        if (serviceNav && contentContainer) {
+            const navLinks = serviceNav.querySelectorAll('.service-nav-link');
+            const contentBlocks = contentContainer.querySelectorAll('.service-content-block');
+            
+            serviceNav.addEventListener('click', (e) => {
+                const clickedLink = e.target.closest('.service-nav-link');
+                if (!clickedLink) return;
+                
+                e.preventDefault();
+                const targetId = clickedLink.dataset.target;
+                
+                // Remove active state from all links
+                navLinks.forEach(link => link.classList.remove('active'));
+                // Add active state to clicked link
+                clickedLink.classList.add('active');
+                
+                // Hide all content blocks
+                contentBlocks.forEach(block => block.classList.remove('active'));
+                
+                // Show target content block
+                const targetBlock = document.querySelector(targetId);
+                if (targetBlock) {
+                    targetBlock.classList.add('active');
+                }
+            });
+        }
+        
+        // FAQ Accordion Logic
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            if (question) {
+                question.addEventListener('click', () => {
+                    // Check if the item is already open
+                    const wasOpen = item.classList.contains('open');
+                    
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('open');
+                    });
+                    
+                    // If it wasn't open, open it
+                    if (!wasOpen) {
+                        item.classList.add('open');
+                    }
+                });
+            }
+        });
+
+    });
+    </script>
+</body>
+</html>
