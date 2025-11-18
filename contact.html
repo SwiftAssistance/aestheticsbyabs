@@ -3,51 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Aesthetics by Abs, Kent</title>
+    <title>Contact - Aesthetics by Abs, Kent</title>
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Meet Abs, the fully qualified and insured practitioner behind Aesthetics by Abs, Kent's luxury mobile beauty clinic. Learn about my qualifications and commitment to safety.">
-    <meta name="keywords" content="about aesthetics by abs, kent aesthetics practitioner, qualified aesthetics kent, mobile beauty kent, insured aesthetics">
+    <meta name="description" content="Get in touch with Aesthetics by Abs to book your mobile aesthetic consultation in Kent. Contact me for lip fillers, anti-wrinkle injections, and more.">
+    <meta name="keywords" content="contact aesthetics by abs, book aesthetics kent, mobile beauty consultation, kent aesthetics, book lip fillers">
     <meta name="author" content="Aesthetics by Abs">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph / Facebook Meta Tags -->
-    <meta property="og:title" content="About Me - Aesthetics by Abs, Kent">
-    <meta property="og:description" content="Learn about Abs, the passion, and the qualifications behind Kent's premium mobile aesthetic service.">
+    <meta property="og:title" content="Contact - Aesthetics by Abs, Kent">
+    <meta property="og:description" content="Get in touch with Aesthetics by Abs to book your mobile aesthetic consultation in Kent.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE/about.html"> <!-- TODO: Replace with your live URL -->
-    <meta property="og:image" content="https://placehold.co/1200x630/F4D4D4/FAF9F6?text=About+Aesthetics+by+Abs">
+    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE/contact.html">
+    <meta property="og:image" content="https://placehold.co/1200x630/F4D4D4/FAF9F6?text=Contact+Us">
 
-    <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About Me - Aesthetics by Abs, Kent">
-    <meta name="twitter:description" content="Learn about Abs, the passion, and the qualifications behind Kent's premium mobile aesthetic service.">
-    <meta name="twitter:image" content="https://placehold.co/1200x630/F4D4D4/FAF9F6?text=About+Aesthetics+by+Abs">
+    <meta name="twitter:title" content="Contact - Aesthetics by Abs, Kent">
+    <meta name="twitter:description" content="Get in touch with Aesthetics by Abs to book your mobile aesthetic consultation in Kent.">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/F4D4D4/FAF9F6?text=Contact+Us">
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="YOUR_WEBSITE_URL_HERE/about.html"> <!-- TODO: Replace with your live URL -->
+    <link rel="canonical" href="YOUR_WEBSITE_URL_HERE/contact.html">
 
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- 
-    ======================================================================
-    EMBEDDED CSS STYLES (Consistent with other pages)
-    ======================================================================
-    -->
     <style>
-        /* 1. Root Variables & Base
-        ------------------------------------------------------------------ */
         :root {
-            --color-bg: #FAF9F6; /* Soft White/Cream */
-            --color-primary: #F4D4D4; /* Soft Blush Pink */
-            --color-accent: #D6BCAE; /* Champagne Nude/Gold */
-            --color-text: #3d3d3d; /* Elegant Dark Grey */
+            --color-bg: #FAF9F6;
+            --color-primary: #F4D4D4;
+            --color-accent: #D6BCAE;
+            --color-text: #3d3d3d;
             --color-heading: #2C2C2C;
             --font-heading: 'Cormorant Garamond', serif;
             --font-body: 'Inter', sans-serif;
@@ -66,13 +53,10 @@
             font-weight: 600;
         }
         
-        /* Overrides for Tailwind text colors */
         .text-gray-600, .text-gray-700 {
             color: var(--color-text);
         }
 
-        /* 2. Buttons
-        ------------------------------------------------------------------ */
         .btn-primary {
             display: inline-block;
             padding: 1rem 2rem;
@@ -117,8 +101,6 @@
             transform: translateY(-2px);
         }
 
-        /* 3. Header & Navigation
-        ------------------------------------------------------------------ */
         .glass-effect {
             background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
@@ -151,76 +133,20 @@
         }
         
         .footer-link {
-            color: #D1D5DB; /* text-gray-300 */
+            color: #D1D5DB;
             transition: color 0.3s;
         }
         .footer-link:hover {
             color: var(--color-primary);
         }
 
-        /* 4. Page-Specific: Hero Gradient
-        ------------------------------------------------------------------ */
         .hero-gradient {
             background-color: var(--color-primary);
             background-image: linear-gradient(135deg, #F4D4D4 0%, #FAF9F6 70%);
             position: relative;
             overflow: hidden;
         }
-
-        /* 5. Page-Specific: Qualification Card
-        ------------------------------------------------------------------ */
-        .qualification-card {
-            display: flex;
-            align-items: center;
-            background: #ffffff;
-            padding: 1.5rem; /* p-6 */
-            border-radius: 1rem; /* rounded-2xl */
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.04); /* shadow-lg */
-            border: 1px solid #f3f4f6; /* border-gray-100 */
-            transition: all 0.3s ease-in-out;
-        }
-        .qualification-card:hover {
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
-            transform: translateY(-4px);
-            border-color: var(--color-primary);
-        }
-        .qualification-icon {
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 3rem; /* w-12 */
-            height: 3rem; /* h-12 */
-            margin-right: 1rem; /* mr-4 */
-            border-radius: 9999px; /* rounded-full */
-            background-color: var(--color-primary);
-            color: var(--color-accent);
-            font-size: 1.25rem; /* text-xl */
-        }
-        .qualification-card h3 {
-            font-size: 1.125rem; /* text-lg */
-            font-weight: 500;
-            font-family: var(--font-body);
-            color: var(--color-text);
-        }
-
-        /* 6. Re-usable Components (from index.html)
-        ------------------------------------------------------------------ */
-        .hover-box-effect {
-            background: #ffffff;
-            padding: 2rem;
-            border-radius: 1rem; /* rounded-2xl */
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            transform: translateZ(0);
-        }
-        .hover-box-effect:hover {
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
-            transform: translateY(-0.5rem); /* -translate-y-2 */
-        }
         
-        /* 6. Hero Animation (Copied from index.html)
-        ------------------------------------------------------------------ */
         @keyframes float-hearts {
             0% { transform: translateY(0); opacity: 0; }
             10% { opacity: 0.8; }
@@ -252,9 +178,48 @@
         .hero-heart.heart-9 { left: 80%; font-size: 3.5rem; animation-duration: 23s; animation-delay: -18s; color: var(--color-primary); opacity: 0.6; filter: blur(1.5px); }
         .hero-heart.heart-10 { left: 5%; font-size: 1.5rem; animation-duration: 29s; animation-delay: -20s; }
 
-
-        /* 7. Scroll Animations
-        ------------------------------------------------------------------ */
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 1.5rem 0.5rem;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            text-align: left;
+        }
+        .faq-question h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-heading);
+        }
+        .faq-icon {
+            font-size: 1rem;
+            color: var(--color-accent);
+            transition: transform 0.3s ease;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out, padding 0.4s ease;
+            padding: 0 0.5rem;
+        }
+        .faq-answer p {
+            padding-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+        }
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+        
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -268,8 +233,6 @@
         .reveal-delay-2 { transition-delay: 400ms; }
         .reveal-delay-3 { transition-delay: 600ms; }
 
-        /* 8. Floating WhatsApp Button
-        ------------------------------------------------------------------ */
         .whatsapp-float {
             position: fixed;
             bottom: 2rem;
@@ -296,30 +259,25 @@
 </head>
 <body class="antialiased">
 
-    <!-- Header Navigation -->
     <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-effect shadow-md">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo -->
             <a href="index.html" class="text-3xl font-bold" style="font-family: var(--font-heading); color: var(--color-heading);">
                 Aesthetics by Abs
             </a>
             
-            <!-- Desktop Nav (UPDATED: 'About' is active and links are consistent) -->
             <div class="hidden md:flex space-x-8 nav-links">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="services.html" class="nav-link">Services</a>
-                <a href="about.html" class="nav-link active">About</a>
+                <a href="about.html" class="nav-link">About</a>
                 <a href="testimonials.html" class="nav-link">Testimonials</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
             </div>
             
-            <!-- Mobile Nav Toggle -->
             <button id="mobile-menu-button" class="md:hidden text-2xl text-[var(--color-heading)]">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
         
-        <!-- Mobile Menu (UPDATED: 'About' is active and links are consistent) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg w-full absolute left-0 top-full shadow-lg nav-links">
             <a href="index.html" class="nav-link-mobile">Home</a>
             <a href="services.html" class="nav-link-mobile">Services</a>
@@ -329,9 +287,7 @@
         </div>
     </header>
 
-    <!-- About Hero Section -->
-    <section id="about-hero" class="relative pt-40 pb-24 hero-gradient">
-        <!-- Animated Background Shapes -->
+    <section id="contact-hero" class="relative pt-40 pb-24 hero-gradient">
         <div class="hero-animation-container">
             <i class="fas fa-heart hero-heart heart-1"></i>
             <i class="fas fa-heart hero-heart heart-2"></i>
@@ -347,144 +303,177 @@
         
         <div class="container mx-auto px-6 text-center relative z-10">
             <h1 class="text-5xl md:text-7xl font-bold reveal" style="line-height: 1.2;">
-                Meet Abs
+                Get In Touch
             </h1>
             <p class="mt-6 mb-10 text-lg md:text-xl max-w-lg mx-auto reveal reveal-delay-1">
-                Your fully qualified, insured, and passionate mobile aesthetics practitioner in Kent.
+                I'm here to answer any questions. Please get in touch to book your consultation.
             </p>
         </div>
     </section>
 
-    <!-- Main About Section -->
-    <section id="main-about" class="py-24 bg-white">
+    <section id="contact-form" class="py-24 bg-white">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <!-- Image Column -->
-                <div class="md:w-1/2 reveal">
-                    <img src="aesthetics-by-abs1-kent.jpg" alt="Abs, founder of Aesthetics by Abs, a mobile beauty clinic in Kent" class="rounded-2xl shadow-xl w-full h-auto object-cover" style="aspect-ratio: 1/1;">
-                    <!-- Make sure to upload your photo with the name "aesthetics-by-abs-kent.jpg" 
-                         so it appears here. This is the same image used on the home page. -->
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
+
+                <div class="lg:w-3/5 reveal">
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-6">Send An Enquiry</h2>
+                    <p class="text-lg mb-8">
+                        Please fill out the form below to get started. A consultation is required for all new clients. I'll get back to you as soon as possible!
+                    </p>
+                    <form id="main-contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+                        
+                        <div id="form-success-msg" class="hidden bg-green-100 border border-green-300 text-green-800 p-6 rounded-2xl mb-6">
+                            <h3 class="text-2xl font-semibold mb-2">Thank You!</h3>
+                            <p>Your message has been sent successfully. I will get back to you shortly!</p>
+                        </div>
+
+                        <div id="form-content">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <input type="text" name="name" placeholder="Your Name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] transition-all" required>
+                                <input type="email" name="email" placeholder="Your Email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] transition-all" required>
+                            </div>
+                            <div class="mb-6">
+                                <input type="tel" name="phone" placeholder="Your Phone Number (optional)" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] transition-all">
+                            </div>
+                            <div class="mb-6">
+                                <textarea name="message" placeholder="Your Message (e.g., desired treatment, availability)" rows="5" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] transition-all" required></textarea>
+                            </div>
+                            <div class="text-left">
+                                <button id="form-submit-btn" type="submit" class="btn-primary">Send Enquiry</button>
+                            </div>
+                            <div id="form-result-msg" class="mt-4 text-sm"></div>
+                        </div>
+                    </form>
                 </div>
-                
-                <!-- Text Column -->
-                <div class="md:w-1/2 reveal reveal-delay-1">
-                    <h2 class="text-4xl md:text-5xl font-semibold mb-6">
-                        Luxury & Convenience, <br>Beautifully Combined.
-                    </h2>
-                    <p class="text-lg mb-4">
-                        Welcome to Aesthetics by Abs, your private mobile beauty clinic serving Kent. I believe that self-care should be both luxurious and effortless.
-                    </p>
-                    <p class="mb-4">
-                        My name is Abs, and I'm a fully qualified and insured aesthetics practitioner. My mission is to provide the highest standard of non-surgical treatments in the privacy and comfort of your own home. 
-                    </p>
-                    <p class="mb-6">
-                        I understand that life is busy. That's why I eliminate the stress of travel and waiting rooms, allowing you to relax and enjoy a truly personalised and discreet service. Your safety, comfort, and achieving your natural beauty goals are my top priorities.
-                    </p>
-                    <a href="services.html" class="btn-secondary">Explore Treatments</a>
+
+                <div class="lg:w-2/5 reveal reveal-delay-1">
+                    <div class="bg-gray-50 p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100">
+                        <h3 class="text-3xl font-semibold mb-8">Contact Details</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-map-marker-alt text-2xl text-[var(--color-accent)] mt-1"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold">Service Area</h4>
+                                    <p>Proudly serving Kent & surrounding areas. We come to you!</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-envelope text-2xl text-[var(--color-accent)] mt-1"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold">Email</h4>
+                                    <a href="mailto:info@aestheticsbyabs.co.uk" class="hover:text-[var(--color-accent)] transition-colors">info@aestheticsbyabs.co.uk</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-phone text-2xl text-[var(--color-accent)] mt-1"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold">Phone</h4>
+                                    <a href="tel:07849432449" class="hover:text-[var(--color-accent)] transition-colors">07849 432449</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="fab fa-whatsapp text-2xl text-[var(--color-accent)] mt-1"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold">WhatsApp</h4>
+                                    <a href="https://wa.me/447849432449" target="_blank" class="hover:text-[var(--color-accent)] transition-colors">Click to Chat</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="fab fa-instagram text-2xl text-[var(--color-accent)] mt-1"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold">Instagram</h4>
+                                    <a href="https://www.instagram.com/aestheticsbyabs" target="_blank" class="hover:text-[var(--color-accent)] transition-colors">@aestheticsbyabs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Qualifications Section (NEW) -->
-    <section id="qualifications" class="py-24">
+    <section id="map" class="py-24">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-semibold reveal">My Qualifications</h2>
-                <p class="text-lg mt-4 max-w-2xl mx-auto reveal reveal-delay-1">
-                    Your safety is my priority. I am fully trained and certified in all procedures and safety protocols.
+            <div class="reveal">
+                <h3 class="text-4xl md:text-5xl font-semibold mb-8 text-center">We Serve All of Kent</h3>
+                <p class="text-lg text-center max-w-2xl mx-auto mb-8">
+                    Based in Kent, we provide our luxury mobile services to your doorstep, wherever you are in the county.
                 </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                <!-- Certificate 1 -->
-                <div class="qualification-card reveal">
-                    <div class="qualification-icon"><i class="fas fa-notes-medical"></i></div>
-                    <h3>Foundation Anti Wrinkle</h3>
-                </div>
-                <!-- Certificate 2 -->
-                <div class="qualification-card reveal reveal-delay-1">
-                    <div class="qualification-icon"><i class="fas fa-fire"></i></div>
-                    <h3>Fat Dissolving</h3>
-                </div>
-                <!-- Certificate 3 -->
-                <div class="qualification-card reveal reveal-delay-2">
-                    <div class="qualification-icon"><i class="fas fa-prescription-bottle"></i></div>
-                    <h3>B12 Vitamin Injections</h3>
-                </div>
-                <!-- Certificate 4 -->
-                <div class="qualification-card reveal">
-                    <div class="qualification-icon"><i class="fas fa-sun"></i></div>
-                    <h3>Vitamin D Injections</h3>
-                </div>
-                <!-- Certificate 5 -->
-                <div class="qualification-card reveal reveal-delay-1">
-                    <div class="qualification-icon"><i class="fas fa-first-aid"></i></div>
-                    <h3>First Aid</h3>
-                </div>
-                <!-- Certificate 6 -->
-                <div class="qualification-card reveal reveal-delay-2">
-                    <div class="qualification-icon"><i class="fas fa-heart-pulse"></i></div>
-                    <h3>CPR</h3>
-                </div>
-                <!-- Certificate 7 -->
-                <div class="qualification-card reveal">
-                    <div class="qualification-icon"><i class="fas fa-syringe"></i></div>
-                    <h3>Anaphylaxis</h3>
-                </div>
-                <!-- Certificate 8 -->
-                <div class="qualification-card reveal reveal-delay-1">
-                    <div class="qualification-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Managing Complications</h3>
+                <div class="max-w-4xl mx-auto rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160241.6703554091!2d0.4852003885669536!3d51.2751713437295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ded56298e9c5c1%3A0x66f7f6f70751919!2sKent%2C%20UK!5e0!3m2!1sen!2sus"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Map of Kent, UK">
+                    </iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us Section (from index.html) -->
-    <section id="why-choose-us" class="py-24 bg-white">
-        <div class="container mx-auto px-6">
+    <section id="faq" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-semibold reveal">The Aesthetics by Abs Difference</h2>
+                <h2 class="text-4xl md:text-5xl font-semibold reveal">Frequently Asked Questions</h2>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                <!-- Feature 1 -->
-                <div class="reveal hover-box-effect">
-                    <i class="fas fa-home text-4xl mb-4 text-[var(--color-accent)]"></i>
-                    <h3 class="text-xl font-semibold mb-2">Mobile Convenience</h3>
-                    <p>Receive expert treatments in the comfort and privacy of your home.</p>
+
+            <div class="faq-container reveal reveal-delay-2">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>What does "mobile aesthetics" mean?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            It means I bring the clinic to you! I perform all treatments in the comfort, privacy, and convenience of your own home. I bring a portable treatment bed, medical-grade supplies, and everything needed for a safe, hygienic, and professional service.
+                        </p>
+                    </div>
                 </div>
-                
-                <!-- Feature 2 -->
-                <div class="reveal reveal-delay-1 hover-box-effect">
-                    <i class="fas fa-user-shield text-4xl mb-4 text-[var(--color-accent)]"></i>
-                    <h3 class="text-xl font-semibold mb-2">Qualified Professional</h3>
-                    <p>Fully insured and certified practitioner dedicated to your safety and results.</p>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Is a consultation required for new clients?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes, all new clients require a full consultation. This is crucial for me to assess your medical history, understand your aesthetic goals, discuss treatment options, and ensure you are a suitable candidate. For anti-wrinkle injections, a consultation with my nurse prescriber is also legally required.
+                        </p>
+                    </div>
                 </div>
-                
-                <!-- Feature 3 -->
-                <div class="reveal reveal-delay-2 hover-box-effect">
-                    <i class="fas fa-gem text-4xl mb-4 text-[var(--color-accent)]"></i>
-                    <h3 class="text-xl font-semibold mb-2">Premium Products</h3>
-                    <p>We use only industry-leading, CE-marked products for superior, lasting results.</p>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>What areas in Kent do you cover?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            I cover most of Kent and surrounding areas. A small travel fee may apply depending on your distance from my base. Please get in touch with your postcode, and I can confirm any travel costs before your booking.
+                        </p>
+                    </div>
                 </div>
-                
-                <!-- Feature 4 -->
-                <div class="reveal reveal-delay-3 hover-box-effect">
-                    <i class="fas fa-hand-sparkles text-4xl mb-4 text-[var(--color-accent)]"></i>
-                    <h3 class="text-xl font-semibold mb-2">Personalised Care</h3>
-                    <p>Bespoke consultations and treatment plans tailored to your unique goals.</p>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>What products do you use?</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            I am committed to safety and quality. I only use premium, industry-leading, CE-marked products for all my treatments. This ensures you receive the best possible, longest-lasting results in the safest manner.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-[#2C2C2C] text-gray-300 pt-24 pb-8">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
-                <!-- Column 1: Logo & Info -->
                 <div>
                     <h3 class="text-3xl font-semibold text-white mb-2" style="font-family: var(--font-heading);">Aesthetics by Abs</h3>
                     <p>Luxury Mobile Aesthetics in Kent</p>
@@ -498,7 +487,6 @@
                     </div>
                 </div>
 
-                <!-- Column 2: Quick Links -->
                 <div>
                     <h4 class="text-xl font-semibold text-white mb-4 uppercase tracking-wider">Quick Links</h4>
                     <nav class="space-y-3">
@@ -510,7 +498,6 @@
                     </nav>
                 </div>
 
-                <!-- Column 3: Our Services -->
                 <div>
                     <h4 class="text-xl font-semibold text-white mb-4 uppercase tracking-wider">Our Services</h4>
                     <nav class="space-y-3">
@@ -522,7 +509,6 @@
                     </nav>
                 </div>
 
-                <!-- Column 4: Contact Details -->
                 <div>
                     <h4 class="text-xl font-semibold text-white mb-4 uppercase tracking-wider">Get In Touch</h4>
                     <div class="space-y-4">
@@ -545,7 +531,6 @@
                 </div>
             </div>
             
-            <!-- Bottom Bar -->
             <div class="border-t border-gray-700 mt-16 pt-8 text-center text-gray-400 text-sm">
                 <p>&copy; <span id="current-year"></span> Aesthetics by Abs. All rights reserved.</p>
                 <p class="mt-1">
@@ -556,26 +541,18 @@
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/447849432449" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- 
-    ======================================================================
-    EMBEDDED JAVASCRIPT
-    ======================================================================
-    -->
     <script>
     document.addEventListener('DOMContentLoaded', () => {
 
-        // Set current year in footer
         const currentYearEl = document.getElementById('current-year');
         if (currentYearEl) {
             currentYearEl.textContent = new Date().getFullYear();
         }
 
-        // Mobile Menu Toggle
         const menuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         const navLinks = mobileMenu ? mobileMenu.querySelectorAll('.nav-link-mobile') : [];
@@ -593,7 +570,6 @@
                 }
             });
             
-            // Close mobile menu when a link is clicked
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.remove('menu-open');
@@ -604,7 +580,6 @@
             });
         }
 
-        // Intersection Observer for Scroll Animations
         const revealElements = document.querySelectorAll('.reveal');
         const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
         const observerCallback = (entries, observer) => {
@@ -618,11 +593,76 @@
         const observer = new IntersectionObserver(observerCallback, observerOptions);
         revealElements.forEach(el => observer.observe(el));
         
-        // Sticky Header Shadow on Scroll
         const header = document.getElementById('header');
         if (header) {
             window.addEventListener('scroll', () => {
                 header.classList.toggle('shadow-lg', window.scrollY > 10);
+            });
+        }
+
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            if (question) {
+                question.addEventListener('click', () => {
+                    const wasOpen = item.classList.contains('open');
+                    
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('open');
+                    });
+                    
+                    if (!wasOpen) {
+                        item.classList.add('open');
+                    }
+                });
+            }
+        });
+
+        const contactForm = document.getElementById('main-contact-form');
+        if (contactForm) {
+            const submitBtn = document.getElementById('form-submit-btn');
+            const resultMsg = document.getElementById('form-result-msg');
+            const successMsg = document.getElementById('form-success-msg');
+            const formContent = document.getElementById('form-content');
+
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                
+                const accessKey = this.querySelector('input[name="access_key"]').value;
+                if (accessKey === "YOUR_WEB3FORMS_ACCESS_KEY_HERE") {
+                    if(resultMsg) resultMsg.innerHTML = "<span style='color: red;'>Please add your Web3Forms Access Key.</span>";
+                    return;
+                }
+
+                const formData = new FormData(this);
+                const originalButtonText = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = "Sending...";
+                if(resultMsg) resultMsg.innerHTML = "";
+
+                fetch(this.action, {
+                    method: 'POST',
+                    body: formData,
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        formContent.classList.add('hidden');
+                        successMsg.classList.remove('hidden');
+                    } else {
+                        console.error('Error from Web3Forms:', data);
+                        if(resultMsg) resultMsg.innerHTML = `<span style='color: red;'>${data.message || "An error occurred."}</span>`;
+                    }
+                })
+                .catch(error => {
+                    console.error('Submission Error:', error);
+                    if(resultMsg) resultMsg.innerHTML = "<span style='color: red;'>An error occurred. Please try again.</span>";
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalButtonText;
+                });
             });
         }
 
